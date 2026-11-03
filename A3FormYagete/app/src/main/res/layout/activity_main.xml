@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/TextEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/pink"
+        android:hint="Email address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/yellowYago"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextNombre"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/TextNombre"
+        android:textColor="@color/white"
+        android:textColorHint="@color/green"
+        android:hint="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/redFer"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/TextBiography"
+        android:textColor="@color/black"
+        android:textColorHint="@color/pink"
+        android:hint="Biography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/yellowYago"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailAddress"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <!-- android:hint="" -->
+    <EditText
+        android:id="@+id/TextURL"
+        android:textColor="@color/white"
+        android:textColorHint="@color/green"
+        android:hint="Url image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/redFer"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextBiography"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextURL"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <ImageView
+        android:id="@+id/UserAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextURL"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
