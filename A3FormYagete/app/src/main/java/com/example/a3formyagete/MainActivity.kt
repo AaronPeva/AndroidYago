@@ -29,12 +29,15 @@ class MainActivity : AppCompatActivity() {
         val editTextBiography: EditText = findViewById(R.id.TextBiography)
         val editTextUrl: EditText = findViewById(R.id.TextURL)
 
-        val infoNombre = editTextNombre.text.toString()
-        val infoEmail = editTextEmail.text.toString()
-        val infoBiography = editTextBiography.text.toString()
-        val infoUrl = editTextUrl.text.toString()
+
 
         botonEnviar.setOnClickListener {
+
+            val infoNombre = editTextNombre.text.toString()
+            val infoEmail = editTextEmail.text.toString()
+            val infoBiography = editTextBiography.text.toString()
+            val infoUrl = editTextUrl.text.toString()
+
             val intent = android.content.Intent(this, leonardo_leandro_yago_crapio::class.java)
             intent.putExtra(nombre, infoNombre )
             intent.putExtra(email, infoEmail )
